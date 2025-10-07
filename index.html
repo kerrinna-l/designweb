@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout Flex/Grid</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes Reutilizáveis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-  <section class="max-w-6xl mx-auto p-10 flex items-center justify-between gap-10 border-t shadow-inner bg-white rounded-lg mt-10">
-    
-    <div class="flex-1">
-      <h1 class="text-4xl font-bold mb-4">Bem-vindo ao KONEKTI</h1>
-      <h2 class="text-xl font-semibold text-gray-700 mb-6">Conectando estudantes e conhecimento</h2>
-      <p class="text-gray-600 leading-relaxed">
-        O KONEKTI é uma plataforma pensada para unir alunos, professores e comunidades acadêmicas.
-        Aqui, o aprendizado acontece de forma colaborativa, dinâmica e acessível.
-      </p>
-    </div>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex items-center justify-center p-10">
 
-    <div class="flex-1 flex justify-center">
-      <img src="https://picsum.photos/400" alt="Imagem ilustrativa" class="rounded-lg shadow-md">
-    </div>
-  </section>
+    <section class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
 
-  <!-- 
-  ESTRUTURA ESCOLHIDA: FLEX
-  MOTIVO:
-  - O uso de "flex" facilita o alinhamento horizontal entre texto e imagem.
-  - A centralização vertical é simples com "items-center".
-  - O espaçamento uniforme foi obtido com "gap-10".
-  - Grid seria útil para layouts mais complexos (várias linhas e colunas), mas aqui o flex é mais direto e limpo.
+        <div
+            class="bg-white border rounded-xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Comunicação e Colaboração</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                A comunicação eficiente é a base de qualquer equipe de sucesso, seja em um ambiente acadêmico ou
+                profissional. Quando os membros compartilham informações de forma clara e estruturada, os projetos
+                avançam com maior fluidez, evitando retrabalhos e mal-entendidos. Ferramentas digitais, como fóruns,
+                chats e plataformas de colaboração, ajudam a centralizar o conhecimento e registrar decisões
+                importantes, permitindo que todos acompanhem o progresso em tempo real. Além disso, a colaboração ativa
+                promove a troca de ideias, críticas construtivas e o aprendizado coletivo, fortalecendo a relação entre
+                os participantes. Espaços seguros e inclusivos incentivam a participação, aumentam a motivação e
+                fortalecem a coesão do grupo. O investimento em estratégias de comunicação não apenas melhora a
+                eficiência, mas também cria um ambiente positivo, onde cada indivíduo se sente valorizado. Ao combinar
+                clareza, frequência e ferramentas adequadas, a comunicação se transforma em um poderoso catalisador para
+                inovação, produtividade e engajamento contínuo.
+            </p>
+            <button
+                class="bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+                Saiba mais
+            </button>
+        </div>
+
+        <div
+            class="bg-gray-100 border rounded-xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Organização e Produtividade</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                A produtividade depende fortemente de uma boa organização. Quando processos, tarefas e responsabilidades
+                são bem definidos, as equipes conseguem atingir seus objetivos de maneira mais eficiente, reduzindo
+                erros e atrasos. Ferramentas digitais, como quadros de atividades, notificações e integração com
+                calendários, ajudam a priorizar tarefas e monitorar o progresso de cada projeto. Cada integrante entende
+                seu papel e seus prazos, permitindo um fluxo de trabalho mais harmônico. Além disso, a disciplina na
+                organização contribui para um ambiente saudável, onde decisões são tomadas de forma consciente e
+                estratégica. Combinar organização com comunicação clara aumenta a eficiência e minimiza conflitos
+                internos. A prática constante de planejamento, revisão e acompanhamento permite que equipes se adaptem a
+                mudanças e aproveitem oportunidades, promovendo resultados consistentes. Portanto, investir em
+                organização não é apenas uma questão de controle, mas de criar condições para que cada membro contribua
+                da melhor forma possível, garantindo produtividade e crescimento sustentável para toda a equipe.
+            </p>
+            <button
+                class="bg-emerald-600 text-white px-5 py-2 rounded-md hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-300">
+                Saiba mais
+            </button>
+        </div>
+
+        <div
+            class="bg-blue-50 border rounded-xl shadow-md p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-300 cursor-pointer">
+            <h2 class="text-2xl font-bold mb-4 text-gray-900">Aprendizado e Inovação</h2>
+            <p class="text-gray-600 leading-relaxed mb-6">
+                O aprendizado contínuo é a chave para a inovação e o crescimento pessoal e coletivo. Em um mundo em
+                constante transformação, estar aberto a novas ideias, tecnologias e métodos é essencial para acompanhar
+                as mudanças. Plataformas educacionais modernas oferecem experiências interativas que estimulam o
+                pensamento crítico, a criatividade e a resolução de problemas complexos. A colaboração entre diferentes
+                áreas do conhecimento permite soluções inovadoras e mais completas, fortalecendo a
+                interdisciplinaridade. Além disso, ambientes que incentivam o compartilhamento de informações e
+                experiências promovem a autonomia dos participantes e ampliam as oportunidades de descoberta. A
+                combinação de aprendizado constante, reflexão crítica e aplicação prática cria uma cultura de inovação
+                sustentável, onde indivíduos e equipes podem prosperar. Investir em aprendizado e inovação não apenas
+                amplia horizontes, mas também gera impacto real, promovendo melhorias sociais, educacionais e
+                profissionais que beneficiam toda a comunidade.
+            </p>
+            <button
+                class="bg-indigo-600 text-white px-5 py-2 rounded-md hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-300">
+                Saiba mais
+            </button>
+        </div>
+
+    </section>
+
+    <!-- 
+  Que tipo de componente este card poderia representar em um site real?
+  -> Este card poderia representar seções de "Serviços", "Recursos", "Planos", "Artigos em destaque" ou "Cursos disponíveis" em um site institucional, educacional ou aplicativo web.
   -->
 </body>
+
 </html>
