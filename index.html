@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Flex/Grid</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <section class="max-w-6xl mx-auto p-10 flex items-center justify-between gap-10 border-t shadow-inner bg-white rounded-lg mt-10">
+    
+    <div class="flex-1">
+      <h1 class="text-4xl font-bold mb-4">Bem-vindo ao KONEKTI</h1>
+      <h2 class="text-xl font-semibold text-gray-700 mb-6">Conectando estudantes e conhecimento</h2>
+      <p class="text-gray-600 leading-relaxed">
+        O KONEKTI é uma plataforma pensada para unir alunos, professores e comunidades acadêmicas.
+        Aqui, o aprendizado acontece de forma colaborativa, dinâmica e acessível.
+      </p>
+    </div>
+
+    <div class="flex-1 flex justify-center">
+      <img src="https://picsum.photos/400" alt="Imagem ilustrativa" class="rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- 
+  ESTRUTURA ESCOLHIDA: FLEX
+  MOTIVO:
+  - O uso de "flex" facilita o alinhamento horizontal entre texto e imagem.
+  - A centralização vertical é simples com "items-center".
+  - O espaçamento uniforme foi obtido com "gap-10".
+  - Grid seria útil para layouts mais complexos (várias linhas e colunas), mas aqui o flex é mais direto e limpo.
+  -->
+</body>
+</html>
