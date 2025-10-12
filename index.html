@@ -1,90 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portifólio Pessoal</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
-
-    <header class="header">
-        <nav class="nav-header">
-            <ul class="menu menu-navegacao">
-                <li><a href="#">Estudos de Casos</a></li>
-                <li><a href="#">Trabalhos</a></li>
-                <li><a href="#">Entre em contato</a></li>
+<body class="bg-black text-white">
+    <header class="w-full flex justify-center">
+        <nav class="flex items-center justify-between max-w-6xl w-full px-4 py-6 rounded-md mt-6 bg-[#1B1B1B] md:px-24">
+            <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#" class="text-sm hover:text-white transition-colors text-[#9C9C9C] font-['IBM_Plex_Mono']">Estudos de Casos</a></li>
+                <li><a href="#" class="text-sm hover:text-white transition-colors text-[#9C9C9C] font-['IBM_Plex_Mono']">Trabalhos</a></li>
+                <li><a href="#" class="text-sm hover:text-white transition-colors text-[#9C9C9C] font-['IBM_Plex_Mono']">Entre em contato</a></li>
             </ul>
-            <ul class="menu menu-social">
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-behance"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                </li>
+            <ul class="flex items-center space-x-6 order-1">
+                <li><a href="#" class="hover:text-white transition-colors text-[#9C9C9C]"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#" class="hover:text-white transition-colors text-[#9C9C9C]"><i class="fa-brands fa-behance"></i></a></li>
+                <li><a href="#" class="hover:text-white transition-colors text-[#9C9C9C]"><i class="fa-brands fa-twitter"></i></a></li>
             </ul>
-            <div class="hamburger-menu">
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <div class="hamburger-line"></div>
-                <span class="hamburger-text">Menu</span>
+            <div class="md:hidden order-2 flex flex-col items-center space-y-1 cursor-pointer">
+                <div class="w-6 h-0.5 rounded bg-[#9C9C9C]"></div>
+                <div class="w-6 h-0.5 rounded bg-[#9C9C9C]"></div>
+                <div class="w-6 h-0.5 rounded bg-[#9C9C9C]"></div>
+                <span class="text-xs font-['IBM_Plex_Mono'] text-[#9C9C9C]">Menu</span>
             </div>
         </nav>
     </header>
 
-
-    <main>
-        <section class="container">
-            <div class="left">
-                <div class="text">
-                    <h1>Thaylanne Kérrinna</h1>
-                    <h3>Estudante</h3>
-                    <p>Sou estudante de Informática para Internet e gosto de aprender através da prática. Busco explorar novas
-                        ideias e desenvolver projetos que tragam resultados concretos. Sempre que possível, aplico o que
-                        aprendo para melhorar processos e soluções.
+    <main class="flex items-center justify-center w-full min-h-screen flex-col py-8">
+        <section class="flex max-w-6xl w-full justify-center gap-8 md:flex-row flex-col px-4">
+            <div class="flex flex-col items-start space-y-8 order-2 md:order-none flex-1">
+                <div class="flex flex-col items-start space-y-2">
+                    <h1 class="text-white text-4xl md:text-5xl font-extrabold font-['Raleway']">Thaylanne Kérrinna</h1>
+                    <h3 class="text-white text-2xl font-light font-['Raleway']">Estudante</h3>
+                    <p class="text-sm leading-relaxed max-w-lg text-[#9C9C9C] font-['IBM_Plex_Mono']">
+                        Sou estudante de Informática para Internet e gosto de aprender através da prática. 
+                        Busco explorar novas ideias e desenvolver projetos que tragam resultados concretos. 
+                        Sempre que possível, aplico o que aprendo para melhorar processos e soluções.
                     </p>
                 </div>
-                <button class="btn">
+                <button class="flex px-8 py-4 items-center gap-2 shadow-lg text-white font-bold rounded-lg cursor-pointer w-full md:w-auto justify-center transition-colors border border-[#62BA1B] bg-[#3F8E00] hover:bg-[#3F8E00]">
                     Vamos trabalhar juntos <i class="fa-solid fa-chevron-right"></i>
                 </button>
             </div>
-            <figure class="right">
-                <img src="assets/img/photo.png" alt="Foto do Bruno Nakamura">
+            <figure class="order-1 md:order-none flex justify-center mb-8 md:mb-0 flex-1">
+                <img src="assets/img/photo.png" alt="Foto do Bruno Nakamura" class="max-w-sm h-auto">
             </figure>
         </section>
-        <section class="container last-jobs">
-            <h5>Trabalhou em:</h5>
-            <ul class="job-list">
-                <li><img src="assets/img/img-job-1.svg" alt="Logo ClickUp"></li>
-                <li><img src="assets/img/img-job-2.svg" alt="Logo Dropbox"></li>
-                <li><img src="assets/img/img-job-3.svg" alt="Logo Paychex"></li>
-                <li><img src="assets/img/img-job-4.svg" alt="Logo Elastic"></li>
-                <li><img src="assets/img/img-job-5.svg" alt="Logo Stripe"></li>
+
+        <section class="flex flex-col items-start space-y-5 mt-8 max-w-6xl w-full px-4">
+            <h5 class="text-white text-sm font-light font-['IBM_Plex_Mono']">Trabalhou em:</h5>
+            <ul class="flex items-center justify-between gap-8 w-full overflow-x-auto">
+                <li class="w-32 h-14 md:w-40 md:h-16 rounded-md flex items-center justify-center flex-shrink-0 transition-colors border border-[#1B1B1B] hover:border-[#9C9C9C]">
+                    <img src="assets/img/img-job-1.svg" alt="Logo ClickUp" class="max-h-8">
+                </li>
+                <li class="w-32 h-14 md:w-40 md:h-16 rounded-md flex items-center justify-center flex-shrink-0 transition-colors border border-[#1B1B1B] hover:border-[#9C9C9C]">
+                    <img src="assets/img/img-job-2.svg" alt="Logo Dropbox" class="max-h-8">
+                </li>
+                <li class="w-32 h-14 md:w-40 md:h-16 rounded-md flex items-center justify-center flex-shrink-0 transition-colors border border-[#1B1B1B] hover:border-[#9C9C9C]">
+                    <img src="assets/img/img-job-3.svg" alt="Logo Paychex" class="max-h-8">
+                </li>
+                <li class="w-32 h-14 md:w-40 md:h-16 rounded-md flex items-center justify-center flex-shrink-0 transition-colors border border-[#1B1B1B] hover:border-[#9C9C9C]">
+                    <img src="assets/img/img-job-4.svg" alt="Logo Elastic" class="max-h-8">
+                </li>
+                <li class="w-32 h-14 md:w-40 md:h-16 rounded-md flex items-center justify-center flex-shrink-0 transition-colors border border-[#1B1B1B] hover:border-[#9C9C9C]">
+                    <img src="assets/img/img-job-5.svg" alt="Logo Stripe" class="max-h-8">
+                </li>
             </ul>
         </section>
     </main>
-
 </body>
-
 </html>
