@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra de Créditos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-[Sora] bg-white text-gray-800">
+
+    <header class="flex justify-between items-center border-b border-gray-200 px-6 py-3">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <img src="img/logo-awe.jpg" alt="" class="h-8">
+            </a>
+            <nav>
+                <a href="#" class="user flex items-center space-x-3">
+                    <img src="img/logo-ld.jpg" alt="" class="h-8 w-8 rounded-md">
+                    <span class="flex flex-col text-sm">
+                        <strong class="font-semibold">John Doe</strong>
+                        <span class="text-gray-500">Agência Web</span>
+                    </span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex min-h-screen">
+        <aside class="w-64 border-r border-gray-200 p-6">
+            <h3 class="text-base font-semibold mb-6">Canal do cliente</h3>
+            <ul class="space-y-6">
+                <li>
+                    <a href="#" class="flex items-center space-x-2 font-semibold text-gray-800">
+                        <i class="fa-solid fa-shop text-gray-500"></i>
+                        <span>Loja de projetos</span>
+                    </a>
+                    <ul class="ml-6 mt-2 space-y-1 text-sm">
+                        <li><a href="index.html" class="hover:text-blue-600">Dashboard</a></li>
+                        <li><a href="#" class="text-blue-600 font-semibold">Compra de créditos</a></li>
+                        <li><a href="#" class="hover:text-blue-600">Concluídos</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 font-semibold hover:text-gray-800">
+                        <i class="fa-solid fa-diagram-project text-gray-500"></i>
+                        <span>Gestão de projetos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 font-semibold hover:text-gray-800">
+                        <i class="fa-solid fa-bullhorn text-gray-500"></i>
+                        <span>Campanhas</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <section class="flex-1 px-10 py-8 bg-white">
+            <ul class="flex items-center text-sm text-gray-500 space-x-2 mb-6">
+                <li><a href="#" class="hover:underline">Loja de Projetos</a></li>
+                <li>></li>
+                <li><a href="#" class="hover:underline">Comprar Créditos</a></li>
+                <li>></li>
+                <li><span class="text-gray-800">Compra de créditos</span></li>
+            </ul>
+
+            <h1 class="text-xl font-semibold mb-4">Compra de pontos base</h1>
+            <hr class="border-gray-200 mb-8">
+
+            <div class="grid grid-cols-2 gap-6 mb-8">
+                <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+                    <h3 class="text-base font-semibold mb-1">Limite mensal</h3>
+                    <p class="text-sm text-gray-600 mb-4">Confira a quantidade de pontos disponível para compra</p>
+
+                    <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden mb-3">
+                        <div class="h-2 bg-blue-500 w-1/4"></div>
+                    </div>
+
+                    <div class="flex justify-between text-sm text-gray-700">
+                        <div>
+                            <span class="block">Comprado esse mês</span>
+                            <strong>100 créditos</strong>
+                        </div>
+                        <div class="text-right">
+                            <span class="block">Seu limite mensal</span>
+                            <strong>2.000 créditos</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border border-gray-200 rounded-lg p-6 bg-gray-50">
+                    <h3 class="text-base font-semibold mb-4">Informações</h3>
+                    <ul class="space-y-2 text-sm text-gray-700">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-info text-gray-400"></i>
+                            <span>Valor mínimo de <strong>100 créditos</strong></span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-calendar text-gray-400"></i>
+                            <span>Validade <strong>24 meses</strong></span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-chart-line text-gray-400"></i>
+                            <span>Limite mensal <strong>2.000 créditos</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between border border-gray-200 rounded-lg bg-gray-50 p-6 mb-8">
+                <div class="flex flex-col items-center w-1/2">
+                    <h3 class="text-base font-semibold mb-4">Quantidade de créditos para compra</h3>
+
+                    <div class="flex items-center justify-center gap-10 py-6">
+                        <button
+                            class="flex items-center justify-center w-10 h-10 border-2 border-sky-700 rounded-full text-sky-700 text-2xl font-bold hover:bg-sky-100 transition">
+                            −
+                        </button>
+                        <span class="text-5xl font-bold text-black">100</span>
+                        <button
+                            class="flex items-center justify-center w-10 h-10 border-2 border-sky-700 rounded-full text-sky-700 text-2xl font-bold hover:bg-sky-100 transition">
+                            +
+                        </button>
+                    </div>
+                    <div class="w-50 border-t border-gray-200 mb-2"></div>
+                    <span class="text-sm text-gray-500 mb-2">Digite o valor aproximado</span>
+                </div>
+                <div class="flex flex-col items-center justify-center w-1/2">
+                    <h3 class="text-base font-semibold mb-2">Total em reais</h3>
+                    <span class="text-3xl font-bold text-gray-900">R$20.000,00</span>
+                </div>
+            </div>
+
+
+            <section class="mb-12">
+                <h3 class="text-base font-semibold mb-2">Mais informações sobre o produto <i
+                        class="fa-solid fa-chevron-down text-gray-400 text-sm"></i></h3>
+                <hr class="border-gray-200 mb-3">
+                <p class="text-sm text-gray-600">
+                    <strong>ATENÇÃO:</strong> A transferência dos pontos comprados para programas parceiros (Milhas)
+                    depende da
+                    elegibilidade do seu cartão de crédito. Consulte os cartões elegíveis na página do produto a partir
+                    do menu
+                    Viagens - Programas Parceiros.
+                </p>
+            </section>
+
+            <footer class="flex justify-between items-center border-t border-gray-200 pt-6">
+                <a href="#" class="text-blue-600 font-medium hover:underline">Voltar</a>
+                <div class="space-x-3">
+                    <a href="#"
+                        class="px-5 py-2 border border-gray-300 rounded-lg hover:bg-gray-100 text-gray-700 font-medium">Adicionar
+                        ao
+                        carrinho</a>
+                    <a href="#"
+                        class="px-5 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium inline-flex items-center space-x-2">
+                        <span>Continuar</span>
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+            </footer>
+        </section>
+    </main>
+
+</body>
+
+</html>

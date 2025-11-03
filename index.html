@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Version 2.0</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="font-[Sora] text-gray-800 bg-white">
+
+  <header class="flex justify-between items-center border-b border-gray-200 px-6 py-3">
+    <div class="container flex justify-between items-center">
+      <a href="#" class="flex items-center space-x-2">
+        <img src="img/logo-awe.jpg" alt="" class="h-8">
+      </a>
+      <nav>
+        <a href="#" class="user flex items-center space-x-3">
+          <img src="img/logo-ld.jpg" alt="" class="h-8 w-8 rounded-md">
+          <span class="flex flex-col text-sm">
+            <strong class="font-semibold">John Doe</strong>
+            <span class="text-gray-500">Agência Web</span>
+          </span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex min-h-screen">
+    <aside class="w-64 border-r border-gray-200 p-6">
+      <h3 class="text-base font-semibold mb-6">Canal do cliente</h3>
+      <ul class="space-y-6">
+        <li>
+          <a href="#" class="flex items-center space-x-2 font-semibold text-gray-800">
+            <i class="fa-solid fa-shop text-gray-500"></i>
+            <span>Loja de projetos</span>
+          </a>
+          <ul class="ml-6 mt-2 space-y-1 text-sm">
+            <li><a href="#" class="text-blue-600 font-semibold">Dashboard</a></li>
+            <li><a href="credito-comprar.html" class="hover:text-blue-600">Compra de créditos</a></li>
+            <li><a href="#" class="hover:text-blue-600">Concluídos</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="flex items-center space-x-2 font-semibold hover:text-gray-800">
+            <i class="fa-solid fa-diagram-project text-gray-500"></i>
+            <span>Gestão de projetos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="flex items-center space-x-2 font-semibold hover:text-gray-800">
+            <i class="fa-solid fa-bullhorn text-gray-500"></i>
+            <span>Campanhas</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+
+    <section class="workarea flex-1 p-8 bg-white">
+      <header class="mb-8">
+        <figure class="rounded-lg overflow-hidden">
+          <img src="img/banner.jpg" alt="" class="w-full rounded-lg object-cover">
+        </figure>
+      </header>
+
+      <section class="creditos">
+        <h2 class="text-lg font-semibold mb-6">Compre pontos e distribua como quiser</h2>
+
+        <section class="cards-promocionais grid grid-cols-3 gap-6">
+          <a href="#" class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition bg-white">
+            <img src="img/card-1.jpg" alt="" class="w-full">
+            <div class="p-5 space-y-3">
+              <div class="text-sm text-gray-600">Desenvolvimento, consultoria ou UX/UI para seus projetos decolarem.
+              </div>
+              <div>
+                <strong class="block text-gray-900">Comprar créditos <i class="fa"></i></strong>
+                <span class="text-sm text-gray-600">5 créditos por R$10.000,00</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition bg-white">
+            <img src="img/card-2.jpg" alt="" class="w-full">
+            <div class="p-5 space-y-3">
+              <div class="text-sm text-gray-600">Desenvolvimento de projeto de ponta a ponta, com nível de complexidade
+                média com super desconto.</div>
+              <div>
+                <strong class="block text-gray-900">Comprar créditos <i class="fa"></i></strong>
+                <span class="text-sm text-gray-600">21 créditos por R$120.000,00</span>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="border border-gray-200 rounded-xl overflow-hidden hover:shadow-md transition bg-white">
+            <img src="img/card-3.jpg" alt="" class="w-full">
+            <div class="p-5 space-y-3">
+              <div class="text-sm text-gray-600">Descontos cumulativos para projetos em Wordpress para 2025.</div>
+              <div>
+                <strong class="block text-gray-900">Comprar créditos <i class="fa"></i></strong>
+                <span class="text-sm text-gray-600">21 créditos por R$12.000,00</span>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <footer class="border-t border-gray-200 py-4 flex justify-center items-center bg-white">
+    <div class="w-[1180px] ml-[60px] flex justify-end pr-8">
+      <img src="img/logo.jpg" alt="" class="h-6">
+    </div>
+  </footer>
+
+</body>
+
+</html>
