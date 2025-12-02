@@ -2,7 +2,7 @@ tailwind.config = {
     theme: {
         extend: {
             fontfamily: {
-                'sans': ['Inter', 'sistem-ui', 'sans=serif'],
+                'sans': ['Roboto', 'system-ui', 'sans-serif'],
             },
             colors: {
                 // text-ifrn-green
