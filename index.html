@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html lang="en" x-data="{ 
     tab: 'home', 
-    dark: false 
+    dark: true 
 }" :data-theme="dark ? 'dracula' : 'winter'">
 
 <head>
@@ -99,9 +99,9 @@
 
         <!-- Outras seções (Projetos, Contato)... -->
 
-        <div class="card bg-base-100 shadow-xl" x-data="{ modal: false }" x-show="tab === 'projetos'">
+        <div class="card bg-base-100 shadow-xl max-w-[600px] mx-auto" x-data="{ modal: false }" x-show="tab === 'projetos'">
             <div class="card-body">
-                <h2 class="card-title">Projeto X</h2>
+                <h2 class="card-title">Smart Portfolio SPA</h2>
                 <button @click="modal = true" class="btn btn-primary">Ver</button>
             </div>
 
@@ -109,14 +109,68 @@
             <div x-show="modal" class="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
                 x-transition.opacity>
 
-                <div @click.outside="modal = false" class="bg-base-100 p-8 rounded-lg">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint earum animi a consequatur eos
-                        tempora, provident, minus dolorum laboriosam, veniam voluptates. Magnam sapiente amet fuga
-                        labore nam error consectetur in?</h3>
-                    <button @click="modal = false" class="btn">X</button>
+                <div @click.outside="modal = false" class="bg-base-100 p-8 rounded-lg max-w-md w-full">
+                    <h3>Aplicação de portfólio em arquitetura Single Page Application, com navegação rápida e interface
+                        responsiva. Utiliza TailwindCSS, DaisyUI e Alpine.js para criar uma experiência moderna,
+                        interativa e organizada, apresentando perfil, formação, experiência e projetos do desenvolvedor.
+                    </h3>
+                    <button @click="modal = false" class="btn mt-4">X</button>
                 </div>
             </div>
         </div>
+
+
+        <!-- SEÇÃO SOBRE -->
+        <div x-show="tab === 'sobre'" x-transition x-data="{ ativo: null }" class="max-w-2xl mx-auto mt-8">
+
+            <h1 class="text-3xl font-bold mb-6 text-center">Sobre Mim</h1>
+            <p class="text-lg mb-10 text-center">
+                Aqui você pode saber um pouco mais sobre meu trabalho, trajetória e visão como desenvolvedor.
+            </p>
+
+            <!-- FAQ / Perguntas Frequentes -->
+            <div class="space-y-4">
+
+                <!-- FAQ / Perguntas Frequentes -->
+                <div class="space-y-4">
+
+                    <!-- PERGUNTA 1 -->
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="checkbox" @click="ativo = ativo === 1 ? null : 1" :checked="ativo === 1">
+                        <div class="collapse-title text-xl font-medium">
+                            Minha Experiência
+                        </div>
+                        <div class="collapse-content" x-show="ativo === 1" x-transition>
+                            <p>Desenvolvedor Web Fullstack.</p>
+                        </div>
+                    </div>
+
+                    <!-- PERGUNTA 2 -->
+                    <div class="collapse collapse-arrow bg-base-200">
+                        <input type="checkbox" @click="ativo = ativo === 2 ? null : 2" :checked="ativo === 2">
+                        <div class="collapse-title text-xl font-medium">
+                            Minha Formação
+                        </div>
+                        <div class="collapse-content" x-show="ativo === 2" x-transition>
+                            <p>IFRN-ZN - Informática Para Internet</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- PERGUNTA 3 -->
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="checkbox" @click="ativo = ativo === 3 ? null : 3" :checked="ativo === 3">
+                    <div class="collapse-title text-xl font-medium">
+                        Meus Objetivos
+                    </div>
+                    <div class="collapse-content" x-show="ativo === 3" x-transition>
+                        <p>Continuar aprimorando minhas habilidades e trabalhar em projetos cada vez mais
+                            desafiadores.
+                        </p>
+                    </div>
+                </div>
+
 
     </main>
 
