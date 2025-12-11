@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div x-data="{ aberto: false }">
+        <h1>O Amor Não Tira Férias - Sinopse<span x-show="!aberto">...</span></h1>
+        <div x-show="aberto">
+            Iris (Kate Winslet) escreve uma coluna sobre casamento bastante conhecida no Daily Telegraph, de Londres.
+            Ela está apaixonada por Jasper (Rufus Sewell), mas logo descobre que ele está prestes a se casar com outra.
+            Bem longe dali, em Los Angeles, está Amanda (Cameron Diaz), dona de uma próspera agência de publicidade
+            especializada na produção de trailers de filmes. Após descobrir que seu namorado, Ethan (Edward Burns), não
+            tem sido fiel, Amanda encontra na internet um site especializado em intercâmbio de casas. Ela e Iris entram
+            em contato e combinam a troca. Logo a mudança trará reflexos na vida amorosa de ambas, com Iris conhecendo
+            Miles (Jack Black), um compositor de cinema, e Amanda se envolvendo com Graham (Jude Law), irmão de Iris.
+        </div>
+        <button @click="aberto = !aberto" x-text="aberto ? 'Ler menos' : 'Ler mais'"></button>
+    </div>
+</body>
+
+</html>
