@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div x-data="{ tab: 1 }">
+
+        <div class="tabs">
+            <button @click="tab = 1" :class="{ 'active': tab === 1 }">Tab 1</button>
+            <button @click="tab = 2" :class="{ 'active': tab === 2 }">Tab 2</button>
+            <button @click="tab = 3" :class="{ 'active': tab === 3 }">Tab 3</button>
+        </div>
+
+        <div class="tab-content" x-show="tab === 1">
+            <h3>Aba 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iusto eum ipsa distinctio, veniam
+                repellendus repudiandae cumque debitis iure voluptatum, unde eaque quod aperiam harum! Tempora,
+                similique modi? Quaerat, quisquam.</p>
+        </div>
+
+        <div class="tab-content" x-show="tab === 2">
+            <h3>Aba 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum unde repudiandae aut accusantium
+                dignissimos minus quam, libero maiores temporibus dolorum necessitatibus quibusdam molestias officia
+                nobis eligendi laudantium in porro doloribus.</p>
+        </div>
+
+        <div class="tab-content" x-show="tab === 3">
+            <h3>Aba 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eius perferendis dolores ad sequi
+                consectetur cum. Sint, corrupti. Repellendus soluta cum maiores adipisci necessitatibus laudantium.
+                Dolores magnam corrupti enim impedit?</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
