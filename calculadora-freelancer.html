@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/daisyui.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <body class="flex justify-center items-center min-h-screen p-6 bg-white">
+
+        <div class="bg-white p-4 w-64 rounded-xl border border-slate-200 shadow-sm" x-data="{ 
+        servicos: [],
+        nomeServico: '',
+        valorServico: 0,
+        adicionar() {
+            this.servicos.push({
+                nome: this.nomeServico,
+                valor: this.valorServico
+            });
+            this.nomeServico = '';
+            this.valorServico = 0;
+        },
+        get total() {
+            return this.servicos.reduce((s, v) => s + v.valor, 0);
+        }
+    }">
+
+            <div class="flex items-center gap-2 mb-4 border-b border-slate-100 pb-2">
+                <div
+                    class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600 font-bold">
+                    $
+                </div>
+                <div class="text-[10px] font-bold text-slate-700">
+                    Orçamento #001
+                </div>
+            </div>
+
+            <div class="flex gap-2 mb-3">
+                <input type="text" x-model="nomeServico" placeholder="Nome do Serviço"
+                    class="input input-bordered input-sm h-6 bg-slate-50 rounded w-2/3 border border-slate-200 text-[10px] px-2">
+                <input type="number" x-model.number="valorServico" placeholder="Valor"
+                    class="input input-bordered input-sm h-6 bg-slate-50 rounded w-1/3 border border-slate-200 text-[10px] px-2">
+            </div>
+
+            <button @click="adicionar()"
+                class="btn btn-sm w-full mb-3 text-[10px] h-7 bg-blue-500 text-white hover:bg-blue-600 border-none">
+                Adicionar
+            </button>
+
+            <div class="space-y-2 mb-3">
+                <template x-for="servico in servicos">
+                    <div
+                        class="flex justify-between items-center text-[10px] text-slate-600 bg-slate-50 p-1 rounded border border-slate-100">
+                        <span x-text="servico.nome"></span>
+                        <span class="font-bold">
+                            R$ <span x-text="servico.valor"></span>
+                        </span>
+                    </div>
+                </template>
+            </div>
+
+            <div class="bg-slate-800 text-white rounded p-2 flex justify-between items-center shadow-lg">
+                <span class="text-[9px] uppercase font-bold text-slate-400">
+                    Total
+                </span>
+                <span class="text-xs font-bold text-green-400">
+                    R$ <span x-text="total"></span>
+                </span>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
